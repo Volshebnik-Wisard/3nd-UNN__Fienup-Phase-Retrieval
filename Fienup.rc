@@ -1,0 +1,235 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Fienup.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Fienup.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IT_Z5_VOSSTFAZINF_DIALOG DIALOGEX 0, 0, 753, 332
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Fienup"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_Signal,"Static",SS_OWNERDRAW | WS_BORDER,222,8,522,100
+    PUSHBUTTON      "Сигнал + Спектр",IDC_DrawSignalButton,6,270,96,24
+    EDITTEXT        IDC_Ampl1,30,30,36,12,ES_AUTOHSCROLL
+    LTEXT           "A1",IDC_STATIC,18,32,10,8
+    EDITTEXT        IDC_Ampl2,30,48,36,12,ES_AUTOHSCROLL
+    LTEXT           "A2",IDC_STATIC,18,50,10,8
+    EDITTEXT        IDC_Ampl3,30,66,36,12,ES_AUTOHSCROLL
+    LTEXT           "A3",IDC_STATIC,18,68,10,8
+    EDITTEXT        IDC_Ampl4,30,84,36,12,ES_AUTOHSCROLL
+    LTEXT           "A4",IDC_STATIC,18,86,10,8
+    EDITTEXT        IDC_x1,150,30,36,12,ES_AUTOHSCROLL
+    LTEXT           "n1",IDC_STATIC,138,32,9,8
+    EDITTEXT        IDC_x2,150,48,36,12,ES_AUTOHSCROLL
+    LTEXT           "n2",IDC_STATIC,138,50,9,8
+    EDITTEXT        IDC_x3,150,66,36,12,ES_AUTOHSCROLL
+    LTEXT           "n3",IDC_STATIC,138,68,9,8
+    EDITTEXT        IDC_x4,150,84,36,12,ES_AUTOHSCROLL
+    LTEXT           "n4",IDC_STATIC,138,86,9,8
+    EDITTEXT        IDC_Sigma1,90,30,36,12,ES_AUTOHSCROLL
+    LTEXT           "S1",IDC_STATIC,78,32,9,8
+    EDITTEXT        IDC_Sigma2,90,48,36,12,ES_AUTOHSCROLL
+    LTEXT           "S2",IDC_STATIC,78,50,9,8
+    EDITTEXT        IDC_Sigma3,90,66,36,12,ES_AUTOHSCROLL
+    LTEXT           "S3",IDC_STATIC,78,68,9,8
+    EDITTEXT        IDC_Sigma4,90,84,36,12,ES_AUTOHSCROLL
+    LTEXT           "S4",IDC_STATIC,78,86,9,8
+    EDITTEXT        IDC_KolToch,40,138,44,12,ES_AUTOHSCROLL
+    LTEXT           "N",IDC_STATIC,30,140,8,8
+    CONTROL         "",IDC_Spectr,"Static",SS_OWNERDRAW | WS_BORDER,222,117,522,100
+    CONTROL         "",IDC_SignalColor,"Static",SS_OWNERDRAW,696,4,15,1
+    LTEXT           "Сигнал",IDC_STATIC,716,0,25,8
+    CONTROL         "",IDC_SpectrColor,"Static",SS_OWNERDRAW,696,112,15,1
+    LTEXT           "Спектр",IDC_STATIC,716,109,28,8
+    CONTROL         "",IDC_SignalAndVSignal,"Static",SS_OWNERDRAW | WS_BORDER,222,226,522,100
+    GROUPBOX        "Начальные параметры",IDC_STATIC,6,6,204,156,BS_CENTER
+    LTEXT           "Сигнал",IDC_STATIC,652,218,25,8
+    LTEXT           "Восстан-ый",IDC_STATIC,700,218,40,8
+    CONTROL         "",IDC_NSignalColor,"Static",SS_OWNERDRAW,632,220,15,1
+    CONTROL         "",IDC_NVosstColor,"Static",SS_OWNERDRAW,680,220,15,1
+    PUSHBUTTON      "Восстановить сигнал",IDC_DrawVosstSignal,6,300,96,24
+    EDITTEXT        IDC_nevyaz,46,180,62,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Невязки",IDC_STATIC,12,182,29,8
+    LTEXT           "A5",IDC_STATIC,18,104,10,8
+    LTEXT           "n5",IDC_STATIC,138,104,9,8
+    LTEXT           "S5",IDC_STATIC,78,104,9,8
+    EDITTEXT        IDC_Ampl5,30,102,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_x5,150,102,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Sigma5,90,102,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KolToch2,129,138,45,12,ES_AUTOHSCROLL
+    LTEXT           "fd",IDC_STATIC,119,140,8,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_IT_Z5_VOSSTFAZINF_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 746
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 325
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Английский (США) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Fienup.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "Fienup.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+#endif    // Английский (США) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Fienup.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
